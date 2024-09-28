@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        h1{
+            color:#1A64D6;
+            text-align:center;
+            font-weight: normal;
+
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        span{
+            color:black;
+        }
+        .m1{
+            color:#615F5B ;
+            font-size:18px;
+            font-family:monospace;
+        }
+        button{display: block;
+             margin:auto;
+            padding:20px;
+            color:white;
+            background-color:#1A64D6 ;
+            font-weight: normal;
+            border: 2px solid;
+            border-radius: 30px;
+            text-align:center;
+            font-style: normal;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+
+        }
+        button:hover{
+            background:white;
+            color:#1A64D6;
+            cursor:pointer;
+
+        }
+        .lolo{
+            color:#615F5B;
+            text-align: center;
+            font-size: 18px;
+            font-family: monospace;
+        }
+       li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+        li:hover{
+            background:#FFF4DD;
+            cursor: pointer;
+        }
+        ul{
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+<p>&#127777</p>
+    <h1><strong>Currently 21° in Tokyo</strong> <br><span>13° / <strong>23°</strong></span>
+        <uL>
+    <li>
+   <h3>&#127783 Tomorrow</h3>
+   <p><span class="m1">10° /<strong>22°</strong></span></p>
+    </li>
+    <li>
+<h3>&#127782 Saturday</h3>
+    <p><span class="m1">15°/ <strong>17°</strong></span></p>
+    </li>
+    <li>
+<h3>&#127774 Sunday</h3>
+   <p><span class="m1">25°/ <strong>28°</strong></span></p>
+   </li>
+   </uL>
+   <button>Change City</button>
+   <p class="lolo">Coded by Divyanshi</p>
+   <script>
+    {
+       function call(){
+        city=prompt("What is your city?");
+        temp=prompt("What is the temperature in your city?");
+        let h1=document.querySelector("h1");
+        if (temp<0){
+            
+            h1.innerHTML="It's freezing! &#9924 ,the temperature in " + city + " is "+ temp +"°C";
+        }
+        else {h1.innerHTML="It's amazing! &#9728 ,the temperature in " + city + " is "+ temp +"°C";
+
+        }
+       }
+       let callButton=document.querySelector("button");
+       callButton.addEventListener("click",call);
+    }
+   </script>
+    </body>
+
+</html>

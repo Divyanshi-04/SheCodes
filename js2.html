@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes</title>
+    <style>
+        h1{
+            text-align:center;
+            color:black;
+        }
+        span{
+            color:#885DF1;
+        }
+        h3{
+            color:black;
+            font-family: monospace;
+            text-align: center;
+            font-weight: normal;
+        }
+        button{
+            color: #885DF1;
+            background-color:#FEFEFE;
+            border: 2px solid;
+            border-radius: 30px;
+            display:block;
+           margin:  0 auto;
+            padding:15px;
+            
+
+        }
+        button:hover{
+            background-color: #885DF1;
+            color:white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <br><br><br><br><br><br><br>
+<h1>&#128105 She Codes is a Coding Workshop for Women<br><span>Access new career in Technology</span></h1>
+<br>
+<h3>SheCodes teaches coding,design and management skills to women<br><strong>Limited amount of spots!</strong></h3>
+<br>
+<button>Apply Now</button>
+<script>
+   /*let hometown=prompt("What is your hometown?");
+    alert("Your hometown is "+hometown);
+    let a=prompt("What is your first name?");
+    let b=prompt("What is your last name?");
+    alert ("Your name is "+ a +" "+ b);*/
+    // ---------------------------------->>
+    /*let ques1=prompt("How old are you?");
+    if (ques1>=18){
+        alert("You can apply to She Codes!");
+    }
+    if (ques1<18){
+        alert("You cannot apply to SheCodes!");}*/
+    // ---------------------------------->>
+    /*let hour=prompt("What is the currrent hour?");
+    if(hour<12){
+        alert("Good Morning!");
+    }
+    if(hour>=12&& hour<=18){
+        alert("Good Afternoon!");}
+    else{
+        alert("Good Evening!");
+
+    }*/
+    //alternate sol------>
+   /* let currentHour = prompt("What is the current hour?");
+if (currentHour < 12) {
+  alert("Good morning");
+} else {
+  if (currentHour > 18) {
+    alert("Good evening");
+  } else {
+    alert("Good afternoon");
+  }
+}*/
+/*function askForCountry(){
+let country=prompt("Which country are you from?");
+alert("You are from "+" "+country);
+country=country.toLowerCase();//to convert any case to lowercase
+country=country.trim();
+country=country.replace("brasil","brazil");
+if (country==="brazil" || country==="portugal") {
+    alert("You can speak Portugese");
+}
+else{
+    alert("You don't speak Portugese");
+}
+}
+askForCountry();
+askForCountry();//calling of function as many time as we want-->repetition of function */
+function quesName(){
+let name=prompt("What is your name?");
+let age=prompt("What is your age?");
+if (age>=18){
+    let h1=document.querySelector("h1");
+h1.innerHTML="Hi!,"+" "+name +" Welcome to the SheCodes"
+}
+else{
+    let h1=document.querySelector("h1");
+h1.innerHTML="Sorry!,"+name +" You cannot join SheCodes"
+}
+
+} //function is not called whenever the page loads-->comes only when the function is called
+let applyButton=document.querySelector("button");
+applyButton.addEventListener("click",quesName);
+    
+</script>
+</body>
+</html>

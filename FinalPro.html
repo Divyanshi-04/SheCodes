@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Vanilla!</title>
+    <style>
+      h1 {
+        display: block;
+        text-align: center;
+        color: #60e550;
+        text-decoration: wavy;
+      }
+      h2 {
+        display: block;
+        text-align: center;
+        color: #662eed;
+        text-decoration: underline;
+      }
+      body {
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #eaf6f6 0%, #dbd8e3 100%);
+        width: 75%;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 20px;
+      }
+      button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #edb1f1;
+      }
+      img {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding: 0%;
+        border-radius: 10px;
+        border: #93a7d1 solid;
+      }
+      .pa {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .pb {
+        font-family: cursive;
+      }
+      .buy {
+        padding: 10px 20px;
+        display: block;
+        text-shadow: 0 0 black;
+        font-style: italic;
+        font-family: monospace;
+        font-size: large;
+        border-color: blueviolet;
+        background-color: #a2a8d3;
+        margin: 0 auto;
+      }
+      a {
+        text-decoration: none;
+        color: #4ef037;
+      }
+      .end {
+        color: #93a7d1;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      .choco {
+        color: #b64926;
+      }
+      .butter {
+        color: #591fce;
+      }
+      .pre {
+        color: #393939;
+      }
+      .straw {
+        color: #fa7f7f;
+      }
+      .van {
+        color: #eda045;
+      }
+      .car {
+        color: #d9bf77;
+      }
+      li {
+        list-style: disc;
+      }
+      .sil {
+        text-decoration: underline;
+      }
+      .van:hover {
+        color: black;
+      }
+      .butter:hover {
+        color: black;
+      }
+      .pre:hover {
+        color: black;
+      }
+      .car:hover {
+        color: black;
+      }
+      .straw:hover {
+        color: black;
+      }
+      .choco:hover {
+        color: black;
+      }
+      .pb:hover {
+        color: #ff6464;
+      }
+      .pa:hover {
+        color: #962071;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><strong>LaVanilla!</strong></h1>
+    <h2>A Delight you cant't Deny!</h2>
+    <ul>
+      <a href="https://www.britannica.com/search?query=vanilla"
+        ><li class="van">Vanilla</li>
+      </a>
+      <a href="https://www.britannica.com/search?query=chocolate"
+        ><li class="choco">Chocolate</li></a
+      >
+      <a href="https://www.britannica.com/topic/butterscotch"
+        ><li class="butter">Butterscotch</li></a
+      >
+      <a href="https://en.wikipedia.org/wiki/Caramel"
+        ><li class="car">Caramel</li></a
+      >
+      <a href="https://en.wikipedia.org/wiki/Strawberry"
+        ><li class="straw">Strawberry</li></a
+      >
+      <a href="https://soklet.in/products/100-dark-chocolate"
+        ><li class="pre">Dark-Premium</li></a
+      >
+    </ul>
+
+    <p class="pa">
+      <scan><em>How it Started.....</em></scan>
+    </p>
+    <p class="pb">
+      <em
+        >The cacao tree was cultivated more than 3,000 years ago by the Maya,
+        Toltec, and Aztec peoples, who prepared a beverage from its fruit ie.
+        the cocoa bean hence sometimes using it as a ceremonial drink and also
+        used the bean as a currency.The Maya considered chocolate to be the food
+        of the gods, held the cacao tree to be sacred.</em
+      >
+    </p>
+    <img
+      src="https://www.allrecipes.com/thmb/kwQEEWrz8oVxChnaL9bvUV-yZ-Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dj22-chocolate-photo-by-brie-passano-5d540c39ace443dc9ab9b97b98a03ea8.jpg"
+      alt="La Vanilla"
+    />
+    <br /><br />
+    <button class="buy">Buy Now</button>
+    <p>
+      <a
+        href="https://www.britannica.com/topic/chocolate"
+        text-align="center"
+        class="sil"
+        ;
+        ><em>Visit</em></a
+      >
+    </p>
+    <p class="end">Page designed by Divyanshi</p>
+    <script>
+      alert("Welcome to the world of La Vanilla!!!");
+      function buying() {
+        let q1 = prompt("What is your name?");
+        let q2 = prompt("What is your age?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "<em>Thank you " + q1 + " for visiting us!";
+
+        if (q2 < 18) {
+          alert("Sorry! " + q1 + " You can't order.");
+        } else {
+          alert(
+            "Congratulations! " +
+              q1 +
+              " Now you can buy your favourite flavour."
+          );
+          let q3 = prompt("Which flavour do you want to buy?");
+        }
+      }
+      let hear = document.querySelector("button");
+      hear.addEventListener("click", buying);
+    </script>
+  </body>
+</html>
